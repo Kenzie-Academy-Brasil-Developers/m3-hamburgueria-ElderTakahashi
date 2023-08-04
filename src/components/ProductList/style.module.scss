@@ -1,0 +1,15 @@
+.productsListBox {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 15px;
+    margin-top: 20px;
+
+    @media (min-width: 700px) {
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
+        justify-items: center;    
+        gap: 30px;          
+    } 
+}

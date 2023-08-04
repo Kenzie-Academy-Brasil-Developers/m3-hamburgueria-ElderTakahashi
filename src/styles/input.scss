@@ -1,0 +1,21 @@
+input {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    border: none;
+    color: var(--font-color-4);
+
+    &::placeholder {
+        color: var(--font-color-4);        
+    }
+
+    &:focus {
+        outline: none;
+        color: var(--font-color-2);        
+
+        &::placeholder {
+            color: var(--font-color-2);
+        }
+    }
+}

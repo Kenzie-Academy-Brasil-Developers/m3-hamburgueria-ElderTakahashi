@@ -1,0 +1,25 @@
+.container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1368px;
+    padding: 1rem;
+    margin: 0 auto; 
+    gap: 5px;            
+
+    &.overflowX {
+        overflow-x: scroll;
+    }
+
+    @media (min-width: 700px) {
+        flex-direction: row; 
+        gap: 20px;               
+    
+        &.overflowX {
+            overflow-x: hidden;
+        }
+    }   
+} 

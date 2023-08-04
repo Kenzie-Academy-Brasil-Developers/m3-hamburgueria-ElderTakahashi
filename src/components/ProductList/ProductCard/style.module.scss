@@ -1,0 +1,31 @@
+.cardBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    width: 300px;
+    min-width: 300px;
+    height: 346px;
+    border: 2px solid var(--color-grey-2);
+    border-radius: var(--border-radius-0);
+    overflow: hidden;    
+
+    &:hover {
+        border-color: var(--color-primary);
+    }
+
+    & > img {
+        height: 150px;
+        width: 100%;         
+        object-fit: contain;
+        background: var(--background-color-3);        
+    }
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        padding: 10px 15px;
+    }
+}
+
